@@ -1,0 +1,171 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.position-ref {
+  position: relative;
+}
+.alert {
+  margin: 0;
+  margin-top: 55px;
+}
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.top-left {
+  position: absolute;
+  left: 10px;
+  top: 18px;
+}
+
+#brand {
+  font-size: 18px;
+  font-weight: 800;
+  border-bottom: 1px solid #de1738;
+}
+
+#main {
+  height: auto;
+  position: relative;
+  top:17%;
+}
+
+.job {
+  border: 1px solid grey;
+  box-shadow: 2px 4px #000;
+  margin-right: 5%;
+  margin-bottom: 5%
+}
+.job p {
+  border-bottom: 1px solid darkgrey;
+}
+.joblabel {
+  border-bottom: 1px solid #de1738;
+}
+
+#formwrap {
+  height: auto;
+  position: fixed;
+  right: 0;
+  top:17%;
+}
+
+#admintable {
+  margin-top: 17%;
+  width:100%;
+  position: absolute;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.form-title {
+  border: none;
+  border-bottom: 1px solid #de1738;
+  width: 100%;
+}
+.form-description {
+  border: none;
+  //border-bottom: 1px solid #de1738;
+  width: 100%;
+}
+button {
+  border: 1px solid #de1738!important;
+}
+textarea {
+  resize: none;
+}
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+  border-bottom: 1px solid #de1738;
+}
+input.form-title::-webkit-input-placeholder, textarea.form-description::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+  font-weight: 800;
+  font-size: 20px;
+}
+textarea.form-description {
+  border-bottom: 1px solid #de1738;
+}
+input.form-title::-moz-placeholder, textarea.form-description::-moz-placeholder { /* Firefox 19+ */
+  color: grey;
+  font-weight: 800;
+  font-size: 20px;}
+input.form-title:-ms-input-placeholder, textarea.form-description:-ms-input-placeholder { /* IE 10+ */
+  color: grey;
+  font-weight: 800;
+  font-size: 20px;}
+input.form-title:-moz-placeholder, textarea.form-description:-moz-placeholder { /* Firefox 18- */
+  color: grey;
+  font-weight: 800;
+  font-size: 20px;
+}
+input:focus::-webkit-input-placeholder { color:transparent;border:none; }
+input:focus:-moz-placeholder { color:transparent;border:none; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent;border:none; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent;border:none; } /* IE 10+ */
+textarea:focus::-webkit-input-placeholder { color:transparent;border:none; }
+textarea:focus:-moz-placeholder { color:transparent;border:none; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent;border:none; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent;border:none; } /* IE 10+ */
+
+#mobile {
+  color: grey;
+  font-weight: 600;
+  position: fixed;
+  top: 18%;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #de1738;
+  border-top: 1px solid #de1738;
+  z-index: 3;
+  text-align: center;
+  display:none;
+}
+@media only screen and (max-width: 993px) {
+  #formwrap {
+    position: relative;
+    margin-bottom: 10%;
+    border-top: 2px solid #de1738;
+  }
+  #mobile {
+    display: block;
+  }
+}
